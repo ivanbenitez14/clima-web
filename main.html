@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+	<title>Ejercicio</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.0/normalize.min.css" media="all" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|PT+Serif:400italic" rel="stylesheet" type="text/css">
+	<link type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.css" media="all" rel="stylesheet" />
+	<link type="text/css" href="./css/styles.min.css" media="all" rel="stylesheet" />
+</head>
+<body>
+	<header>
+		<div>
+			<h1>El clima las 24 hs</h1>
+			<span class="byline">Consulta el clima de la ciudad que quieras.</span>
+		</div>
+		<a href="#content" id="skip" title="Skip to content">
+			<svg version="1.2" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+				 x="0px" y="0px" viewBox="0 0 400 200" xml:space="preserve">
+				<g>
+					<path d="M106.308,29.384c6.332,0,11.664,2.444,15.984,7.344c9.214,11.232,18.286,22.174,27.216,32.832l43.2,51.84
+						c5.184-6.629,11.806-14.62,19.873-23.976c8.059-9.362,15.834-18.65,23.328-27.864c8.922-10.658,17.994-21.6,27.215-32.832
+						c4.32-4.9,9.646-7.344,15.984-7.344c4.895,0,9.355,1.58,13.393,4.752c4.32,3.74,6.764,8.424,7.344,14.04
+						c0.574,5.616-1.014,10.726-4.752,15.336l-86.4,103.68c-4.037,4.894-9.362,7.344-15.984,7.344c-6.628,0-11.954-2.45-15.984-7.344
+						l-86.4-103.68c-3.747-4.61-5.333-9.72-4.752-15.336c0.574-5.616,3.024-10.3,7.344-14.04
+						C96.945,30.964,101.407,29.384,106.308,29.384z"/>
+				</g>
+			</svg>
+		</a>
+	</header>
+
+	<main id="content">
+		<section>
+			<h2 id="introduction">¡Bienvenido!</h2>
+			<p>Utilizando nuestra página podrás consultar el clima de cualquier parte del mundo, sólo tienes que seguir los siguientes pasos:</p>
+			<br>
+			<h3>Haz tu consulta</h3>
+		</section>
+
+		<div class="weather-wrapper hide">
+
+			<p><strong>Lugar</strong>
+			<br /><span class="weather-place"></span></p>
+	
+			<p><strong>Temperatura</strong>
+			<br /><span class="weather-temperature"></span> (<span class="weather-min-temperature"></span> - <span class="weather-max-temperature"></span>)</p>
+	
+			<p><strong>Descripcion</strong>
+			<br /><span class="weather-description capitalize"></span></p>
+	
+			<p><strong>Humedad</strong>
+			<br /><span class="weather-humidity"></span></p>
+	
+			<p><strong>Velocidad del viento</strong>
+			<br /><span class="weather-wind-speed"></span></p>
+	
+			<p><strong>Amanecer</strong>
+			<br /><span class="weather-sunrise"></span></p>
+	
+			<p><strong>Atardecer</strong>
+			<br /><span class="weather-sunset"></span></p>
+	
+		</div>
+	</main>
+
+	
+
+
+	<!--
+	{
+		"coord": {
+			"lon": -58.38,
+			"lat": -34.61
+		},
+		"weather": [
+			{
+				"id": 802,
+				"main": "Clouds",
+				"description": "scattered clouds",
+				"icon": "03d"
+			}
+		],
+		"base": "stations",
+		"main": {
+			"temp": 299.29,
+			"feels_like": 297.34,
+			"temp_min": 297.15,
+			"temp_max": 302.04,
+			"pressure": 1011,
+			"humidity": 41
+		},
+		"visibility": 10000,
+		"wind": {
+			"speed": 3.6,
+			"deg": 70
+		},
+		"clouds": {
+			"all": 33
+		},
+		"dt": 1582650565,
+		"sys": {
+			"type": 1,
+			"id": 8224,
+			"country": "AR",
+			"sunrise": 1582623418,
+			"sunset": 1582670202
+		},
+		"timezone": -10800,
+		"id": 3435910,
+		"name": "Buenos Aires",
+		"cod": 200
+	}
+	-->
+			
+</body>
+</html>
